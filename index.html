@@ -20,8 +20,8 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-md-6">
-                    <form id="contactForm" name="jscontactForm1" method="POST" netlify>
-                        <input type="hidden" name="form-name" value="jscontactForm1" />
+                    <form id="contactForm" name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
                         <div class="mb-3">
                             <label for="InputName" class="form-label">Name</label>
                             <input type="text" class="form-control" id="InputName" name="name"
@@ -57,7 +57,6 @@
     crossorigin="anonymous"></script>
     <script>
     document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent the default form submission
         // Assuming you want to show a message on submission
         document.getElementById('formMessage').innerHTML = 'Thank you for your submission!';
     });
